@@ -2173,8 +2173,8 @@ header.main-header .header-sticky.active .container-fluid::before {
 
 .testimonial-btn {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 40px;
+  right: 10px;
   display: flex;
   align-items: center;
   justify-content: right;
