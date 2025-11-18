@@ -2063,7 +2063,7 @@ header.main-header .header-sticky.active .container-fluid::before {
 /************************************/
 
 .our-testimonial {
-  background: url("../images/testimonial-bg.png"), var(--primary-color);
+  /* background: url("../images/testimonial-bg.png"), var(--primary-color); */
   background-repeat: no-repeat;
   background-position: top left;
   background-size: auto;
