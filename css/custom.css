@@ -799,7 +799,7 @@ header.main-header .header-sticky.active .container-fluid::before {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 350px 30px 100px;
+  padding: 250px 30px 100px;
   margin-top: -120px;
   overflow: hidden;
 }
