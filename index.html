@@ -68,12 +68,36 @@
       object-fit: contain;
     }
 
-    /* Mobile + Tablet (up to 768px) */
     @media (max-width: 768px) {
       .navbar-brand {
         padding: 10px;
         display: flex;
       }
+    }
+
+    .site-logo {
+      max-height: 100px;
+      width: auto;
+      border-radius: 5px;
+    }
+
+    /* Mobile screens */
+    @media (max-width: 576px) {
+      .site-logo {
+        max-height: 60px; /* smaller size for mobile */
+      }
+    }
+
+    .gradient-text {
+      background-image: linear-gradient(
+        267.43deg,
+        #fbefd3 4.95%,
+        #ffffff 97.92%
+      ) !important;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
     }
   </style>
   <body>
@@ -93,17 +117,9 @@
           <div class="container-fluid">
             <!-- Logo Start -->
             <a class="nav-link" href="index.html">
-              <img
-                src="img/image.png"
-                alt="Logo"
-                style="
-                  max-height: 100px;
-                  width: auto;
-                  border-radius: 5px;
-                  margin: 0;
-                "
-              />
+              <img src="img/image.png" alt="Logo" class="site-logo" />
             </a>
+
             <!-- Logo End -->
 
             <!-- Main Menu Start -->
@@ -171,7 +187,8 @@
                 <div class="section-title">
                   <h3 class="wow fadeInUp">Welcome to Odyssey.</h3>
                   <h1 class="wow fadeInUp" data-wow-delay="0.2s">
-                    Expert your life & <span>business coaching</span>
+                    Expert your life &
+                    <span class="gradient-text">business coaching</span>
                   </h1>
                 </div>
                 <!-- Section Title End -->
@@ -782,11 +799,11 @@
       .testimonial-item p,
       .testimonial-item h3,
       .testimonial-item .author-content p {
-        color: #042a2d !important;
+        color: #200c34 !important;
       }
 
       .testimonial-rating i {
-        color: #042a2d !important;
+        color: #200c34 !important;
       }
 
       .testimonial-slider-image img {
@@ -824,11 +841,11 @@
             <div class="our-testimonial-content">
               <!-- Section Title Start -->
               <div class="section-title">
-                <h3 class="wow fadeInUp" style="color: #042a2d">testimonial</h3>
+                <h3 class="wow fadeInUp" style="color: #200c34">testimonial</h3>
                 <h2
                   class="wow fadeInUp"
                   data-wow-delay="0.25s"
-                  style="color: #042a2d"
+                  style="color: #200c34"
                 >
                   Real success stories from our <span>coaching clients</span>
                 </h2>
@@ -868,16 +885,16 @@
                           <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="testimonial-content">
-                          <p style="color: #042a2d">
+                          <p style="color: #200c34">
                             Our backyard has been completely transformed! The
                             team was professional, attentive, and delivered
                             beyond our expectations. the quality of work is
                             outstanding.
                           </p>
                         </div>
-                        <div class="author-content" style="color: #042a2d">
-                          <h3 style="color: #042a2d">annette black</h3>
-                          <p style="color: #042a2d">Sr. Gardener</p>
+                        <div class="author-content" style="color: #200c34">
+                          <h3 style="color: #200c34">annette black</h3>
+                          <p style="color: #200c34">Sr. Gardener</p>
                         </div>
                       </div>
                     </div>
@@ -910,7 +927,7 @@
                           <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="testimonial-content">
-                          <p style="color: #042a2d">
+                          <p style="color: #200c34">
                             Our backyard has been completely transformed! The
                             team was professional, attentive, and delivered
                             beyond our expectations. the quality of work is
@@ -918,8 +935,8 @@
                           </p>
                         </div>
                         <div class="author-content">
-                          <h3 style="color: #042a2d">claire peterson</h3>
-                          <p style="color: #042a2d">content writer</p>
+                          <h3 style="color: #200c34">claire peterson</h3>
+                          <p style="color: #200c34">content writer</p>
                         </div>
                       </div>
                     </div>
@@ -952,7 +969,7 @@
                           <i class="fa-solid fa-star"></i>
                         </div>
                         <div class="testimonial-content">
-                          <p style="color: #042a2d">
+                          <p style="color: #200c34">
                             Our backyard has been completely transformed! The
                             team was professional, attentive, and delivered
                             beyond our expectations. the quality of work is
@@ -960,8 +977,8 @@
                           </p>
                         </div>
                         <div class="author-content">
-                          <h3 style="color: #042a2d">natalie brooks</h3>
-                          <p style="color: #042a2d">graphic designer</p>
+                          <h3 style="color: #200c34">natalie brooks</h3>
+                          <p style="color: #200c34">graphic designer</p>
                         </div>
                       </div>
                     </div>
@@ -990,7 +1007,10 @@
             <div class="about-footer">
               <!-- Section Title Start -->
               <div class="section-title">
-                <h2>We develop & create <span>successful future</span></h2>
+                <h2>
+                  We develop & create
+                  <span class="gradient-text">successful future</span>
+                </h2>
               </div>
               <!-- Section Title End -->
             </div>
