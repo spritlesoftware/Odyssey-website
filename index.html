@@ -61,6 +61,20 @@
       font-size: 24px;
       color: white; /* your brand green */
     }
+    /* Default (desktop) */
+    .navbar-brand img {
+      max-height: 100px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    /* Mobile + Tablet (up to 768px) */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        padding: 10px;
+        display: flex;
+      }
+    }
   </style>
   <body>
     <!-- Preloader Start -->
@@ -82,7 +96,12 @@
               <img
                 src="img/image.png"
                 alt="Logo"
-                style="height: 70px; width: auto; border-radius: 5px; margin: 0"
+                style="
+                  max-height: 100px;
+                  width: auto;
+                  border-radius: 5px;
+                  margin: 0;
+                "
               />
             </a>
             <!-- Logo End -->

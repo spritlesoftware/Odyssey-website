@@ -57,6 +57,14 @@
       color: #042a2d;
       font-weight: 700;
     }
+
+    /* Mobile + Tablet (up to 768px) */
+    @media (max-width: 768px) {
+      .navbar-brand {
+        padding: 10px;
+        display: flex;
+      }
+    }
   </style>
   <body>
     <!-- Preloader Start -->
@@ -78,7 +86,12 @@
               <img
                 src="img/image.png"
                 alt="Logo"
-                style="height: 70px; width: auto; border-radius: 5px"
+                style="
+                  max-height: 100px;
+                  width: auto;
+                  border-radius: 5px;
+                  margin: 0;
+                "
               />
             </a>
             <!-- Logo End -->
@@ -557,8 +570,13 @@
             <div class="col-md-6">
               <!-- Footer Copyright Start -->
               <div class="footer-copyright-text">
-                <p><p>Copyright © <script>document.write(new Date().getFullYear())</script> All Rights Reserved.</p>
-</p>
+                <p>
+                  Copyright ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  All Rights Reserved.
+                </p>
               </div>
               <!-- Footer Copyright End -->
             </div>
